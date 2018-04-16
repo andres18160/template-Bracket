@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="login.master.cs" Inherits="WebAppCamiloAndresAgudelo.MasterPages.login" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../bracket/images/favicon.png" type="image/png">
+
+    <title>Login</title>
+
+    <link href="../bracket/css/style.default.css" rel="stylesheet">
+</head>
+
+<body class="signin">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+    </div>
+
+    <section>
+
+        <div class="signinpanel">
+
+            <div class="row">
+
+                <div class="col-md-7">
+
+                    <div class="signin-info">
+                        <div class="logopanel">
+                            <h1><span>[</span> Prueba <span>]</span></h1>
+                        </div>
+                        <!-- logopanel -->
+
+                        <div class="mb20"></div>
+
+                        <h5><strong>Prueba Camilo Andres Agudelo</strong></h5>
+
+                    </div>
+                    <!-- signin0-info -->
+
+                </div>
+                <!-- col-sm-7 -->
+                <asp:ContentPlaceHolder ID="Content" runat="server">
+                </asp:ContentPlaceHolder>
+                <!-- col-sm-5 -->
+
+            </div>
+            <!-- row -->
+
+            <div class="signup-footer">
+            </div>
+
+        </div>
+        <!-- signin -->
+
+    </section>
+
+
+    <script src="../bracket/js/jquery-1.10.2.min.js"></script>
+    <script src="../bracket/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../bracket/js/bootstrap.min.js"></script>
+    <script src="../bracket/js/modernizr.min.js"></script>
+    <script src="../bracket/js/toggles.min.js"></script>
+    <script src="../bracket/js/retina.min.js"></script>
+    <script src="../bracket/js/jquery.validate.min.js"></script>
+    <asp:ContentPlaceHolder ID="scripts" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="../bracket/js/custom.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

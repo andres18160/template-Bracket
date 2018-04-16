@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="WebAppCamiloAndresAgudelo.MasterPages.Master" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../bracket/images/favicon.png" type="image/png">
+
+    <title>Prueba Camilo</title>
+
+    <link href="../bracket/css/style.default.css" rel="stylesheet">
+    <link href="../bracket/css/jquery.datatables.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-timepicker.min.css" />
+    <link rel="stylesheet" href="../bracket/css/jquery.tagsinput.css" />
+    <link rel="stylesheet" href="../bracket/css/colorpicker.css" />
+    <link rel="stylesheet" href="../bracket/css/dropzone.css" />
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+    </div>
+
+    <section>
+
+        <div class="leftpanel">
+
+            <div class="logopanel">
+                <h1><span>[</span> Prueba <span>]</span></h1>
+            </div>
+            <!-- logopanel -->
+
+            <div class="leftpanelinner">
+
+                <!-- This is only visible to small devices -->
+                <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                    <div class="media userlogged">
+                        <img alt="" src="../bracket/images/photos/loggeduser.png" class="media-object">
+                        <div class="media-body">
+                            <h4>
+                                <asp:Label ID="lblNombre" runat="server"></asp:Label>
+                            </h4>
+                            <span>
+                                <asp:Label ID="lblusuario" runat="server"></asp:Label>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h5 class="sidebartitle actitle">Cuenta</h5>
+                    <ul class="nav nav-pills nav-stacked nav-bracket mb30">
+                        <li><a href="login.aspx"><i class="fa fa-sign-out"></i><span>Salir</span></a></li>
+                    </ul>
+                </div>
+
+                <h5 class="sidebartitle">Navegación</h5>
+                <ul class="nav nav-pills nav-stacked nav-bracket">
+                    <li id="liIndex"><a href="index.aspx"><i class="fa fa-home"></i><span>Index</span></a></li>
+                    <li id="liAdminUsuarios"><a href="usuarios_admin.aspx"><i class="fa fa-edit"></i><span>Administrar Usuarios</span></a>
+                    <li id="liAdminClientes"><a href="clientes.aspx"><i class="fa fa-edit"></i><span>Administrar Clientes</span></a>
+                    <li id="liFacturas"><a href="facturas.aspx"><i class="fa fa-edit"></i><span>Facturas</span></a>
+                </ul>
+
+            </div>
+            <!-- leftpanelinner -->
+        </div>
+        <!-- leftpanel -->
+
+        <div class="mainpanel">
+
+            <div class="headerbar">
+
+                <a class="menutoggle"><i class="fa fa-bars"></i></a>
+                <div class="header-right">
+                    <ul class="headermenu">
+                        <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <img src="../bracket/images/photos/loggeduser.png" alt="" />
+                                    <asp:Label ID="lblNombre2" runat="server"></asp:Label>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                                    <li><a href="login.aspx"><i class="glyphicon glyphicon-log-out"></i>Salir</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- header-right -->
+            </div>
+            <!-- headerbar -->
+
+            <div class="pageheader">
+                <asp:ContentPlaceHolder ID="breadcrumb" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div class="contentpanel">
+                <asp:ContentPlaceHolder ID="Content" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+        <!-- mainpanel -->
+
+
+
+    </section>
+
+
+
+    <script src="../bracket/js/jquery-1.10.2.min.js"></script>
+    <script src="../bracket/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../bracket/js/jquery-ui-1.10.3.min.js"></script>
+    <script src="../bracket/js/bootstrap.min.js"></script>
+    <script src="../bracket/js/modernizr.min.js"></script>
+    <script src="../bracket/js/jquery.sparkline.min.js"></script>
+    <script src="../bracket/js/toggles.min.js"></script>
+    <script src="../bracket/js/retina.min.js"></script>
+    <script src="../bracket/js/jquery.cookies.js"></script>
+    <script src="../bracket/js/jquery.autogrow-textarea.js"></script>
+    <script src="../bracket/js/jquery.datatables.min.js"></script>
+    <script src="../bracket/js/jquery.maskedinput.min.js"></script>
+    <script src="../bracket/js/jquery.tagsinput.min.js"></script>
+    <script src="../bracket/js/jquery.mousewheel.js"></script>
+    <script src="../bracket/js/chosen.jquery.min.js"></script>
+    <script src="../bracket/js/bootstrap-timepicker.min.js"></script>
+    <script src="../bracket/js/dropzone.min.js"></script>
+    <script src="../bracket/js/jquery.validate.min.js"></script>
+    <script src="../bracket/js/custom.js"></script>
+    <asp:ContentPlaceHolder ID="scripts" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

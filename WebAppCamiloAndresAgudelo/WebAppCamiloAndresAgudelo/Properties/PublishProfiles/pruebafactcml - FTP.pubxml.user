@@ -1,0 +1,1083 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1fDt/kzkGUWADWEfZMl1+wAAAAACAAAAAAAQZgAAAAEAACAAAAAkY4EUuf4zT5q0h9k8326d4vECdn5UZXuEMeNnqN49nQAAAAAOgAAAAAIAACAAAAB2HPXqBJEc8hfU/6LmQPvcns1TgpHkMYppuHFGdNsCE4AAAADsMcRTG+/5ZAZhL5UzAAedPBGBPuCPeH/YgAf9n5jssWRv/lPxJtyhXP/BLtPJ3o6oNxSMWdc+UcWGuiBjpFpPfSM0DWYpEmJqoMf61f/JNK2pntwbsjJnkFbyBiDyOwDWIsJpfZqzjAgthc4KA5u2vbfYtGiAW8VJHG/El4p5FkAAAAACMxqHy8nx66Z2OZsPIYqGfvJd28HhGUt2qBvRi7qXpM1GOKHhHBPPm4OEJjFPTx88AuZuvKpywHyfp8JUuuWy</EncryptedPassword>
+    <_NewBackgroundProfile>False</_NewBackgroundProfile>
+    <_PublishTargetUrl>ftp://waws-prod-dm1-021.ftp.azurewebsites.windows.net/site/wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/12/2016 21:10:32</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 14:33:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/27/2016 08:50:24</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/01/2018 12:17:18</publishTime>
+    </File>
+    <File Include="bin/WebAppCamiloAndresAgudelo.dll">
+      <publishTime>04/09/2018 15:25:38</publishTime>
+    </File>
+    <File Include="bracket/alerts.html">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/all.html">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/audio.html">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/blank.html">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/blog-list.html">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/blog-single.html">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/buttons.html">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/calendar.html">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/css/animate.delay.css">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/css/animate.min.css">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/css/bootstrap-fileupload.min.css">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/css/bootstrap-override.css">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/css/bootstrap-timepicker.min.css">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/css/bootstrap-wysihtml5.css">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/css/bootstrap.min.css">
+      <publishTime>04/04/2018 20:44:46</publishTime>
+    </File>
+    <File Include="bracket/css/chosen-sprite%402x.html">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/chosen-sprite.html">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/chosen.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/colorpicker.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/dropzone.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/font-awesome.min.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/fullcalendar.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/images/animated-overlay.html">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/images/_div style=.html">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/jquery-jvectormap-1.2.2.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/jquery-ui-1.10.3.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/jquery.datatables.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/jquery.gritter.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/jquery.tagsinput.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/lato.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/morris.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/prettyPhoto.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/style.default.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/style.inverse.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/toggles.css">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/css/_div style=.html">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/document.html">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/email.html">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/extras.html">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/fontawesome-webfontba72.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/fontawesome-webfontba72.svg">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/fontawesome-webfontba72.ttf">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/fontawesome-webfontba72.woff">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/fontawesome-webfontd41d.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/glyphicons-halflings-regulard41d.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Bla-webfont.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Bla-webfont.svg">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Bla-webfont.ttf">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Bla-webfont.woff">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Bla-webfontd41d.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-BlaIta-webfont.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-BlaIta-webfont.svg">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-BlaIta-webfont.ttf">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-BlaIta-webfont.woff">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-BlaIta-webfontd41d.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Bol-webfont.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Bol-webfont.svg">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Bol-webfont.ttf">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Bol-webfont.woff">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Bol-webfontd41d.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-BolIta-webfont.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-BolIta-webfont.svg">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-BolIta-webfont.ttf">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-BolIta-webfont.woff">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-BolIta-webfontd41d.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Hai-webfont.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Hai-webfont.svg">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Hai-webfont.ttf">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Hai-webfont.woff">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Hai-webfontd41d.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-HaiIta-webfont.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-HaiIta-webfont.svg">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-HaiIta-webfont.ttf">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-HaiIta-webfont.woff">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-HaiIta-webfontd41d.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Lig-webfont.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Lig-webfont.svg">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Lig-webfont.ttf">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Lig-webfont.woff">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Lig-webfontd41d.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-LigIta-webfont.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-LigIta-webfont.svg">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-LigIta-webfont.ttf">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-LigIta-webfont.woff">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-LigIta-webfontd41d.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Reg-webfont.eot">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Reg-webfont.svg">
+      <publishTime>04/04/2018 20:44:47</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Reg-webfont.ttf">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Reg-webfont.woff">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-Reg-webfontd41d.eot">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-RegIta-webfont.eot">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-RegIta-webfont.svg">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-RegIta-webfont.ttf">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-RegIta-webfont.woff">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/fonts/lato/Lato-RegIta-webfontd41d.eot">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/form-layouts.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/form-validation.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/form-wizards.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/general-forms.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/graphs.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/holder.js/100x120.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/holder.js/100x125.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/holder.js/110x110.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/holder.js/60x60.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/holder.js/_div style=.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/icons.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/image.html">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/calendar-arrow.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/chosen-sprite.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/close-white.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_background.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_hex.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_hsb_b.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_hsb_h.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_hsb_s.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_indic.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_overlay.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_rgb_b.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_rgb_g.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_rgb_r.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_select.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/colorpicker_submit.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/select2.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/colorpicker/Thumbs.db">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/dropdown-arrow.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/favicon.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/icon-search.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/is-document.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/is-money.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/is-user.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader1.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader10.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader11.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader12.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader13.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader14.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader15.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader16.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader17.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader18.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader19.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader2.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader20.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader21.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader22.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader23.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader24.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader25.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader26.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader27.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader28.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader29.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader3.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader30.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader4.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader5.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader6.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader7.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader8.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/loader9.gif">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/loaders/Thumbs.db">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/locked.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/minus.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/blog1.jpg">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/blog2.jpg">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/blog3.jpg">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/blog4.jpg">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/loggeduser.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/media-audio.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/media-doc.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/media1.jpg">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/media2.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/media3.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/media4.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/media5.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/media6.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/media7.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/photo1.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/photo2.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/photo3.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/profile-1.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/profilepic1.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/Thumbs.db">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/user1.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/user2.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/user3.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/user4.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/user5.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/photos/userprofile.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/plus-white.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/plus.png">
+      <publishTime>04/04/2018 20:44:48</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/dark_rounded/btnNext.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/dark_rounded/btnPrevious.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/dark_rounded/contentPattern.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/dark_rounded/loader.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/dark_rounded/sprite.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/dark_rounded/_div style=.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/dark_square/btnNext.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/dark_square/btnPrevious.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/dark_square/loader.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/dark_square/sprite.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/dark_square/_div style=.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/default_thumb.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/facebook/btnNext.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/facebook/btnPrevious.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/facebook/contentPatternBottom.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/facebook/contentPatternLeft.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/facebook/contentPatternRight.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/facebook/contentPatternTop.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/facebook/default_thumbnail.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/facebook/loader.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/facebook/sprite.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/facebook/_div style=.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/light_rounded/btnNext.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/light_rounded/btnPrevious.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/light_rounded/loader.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/light_rounded/sprite.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/light_rounded/_div style=.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/light_square/btnNext.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/light_square/btnPrevious.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/light_square/sprite.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/light_square/_div style=.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/loader.gif">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/sprite.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/sprite_next.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/sprite_prev.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/sprite_x.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/sprite_y.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/prettyphoto/Thumbs.db">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/sort_asc.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/sort_asc_disabled.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/sort_both.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/sort_desc.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/sort_desc_disabled.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/spritemap%402x.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/spritemap.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/themeforest.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/Thumbs.db">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/uploadfile.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/images/user.png">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/index.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/invoice.html">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/js/bootstrap-fileupload.min.js">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/js/bootstrap-timepicker.min.js">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/js/bootstrap-wizard.min.js">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/js/bootstrap-wysihtml5.js">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/js/bootstrap.min.js">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/js/charts.js">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/js/chosen.jquery.min.js">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/js/ckeditor/adapters/jquery.js">
+      <publishTime>04/04/2018 20:44:49</publishTime>
+    </File>
+    <File Include="bracket/js/ckeditor/ckeditor.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/colorpicker.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/custom.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/dashboard.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/dropzone.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/flot/flot.categories.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/flot/flot.crosshair.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/flot/flot.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/flot/flot.pie.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/flot/flot.resize.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/flot/flot.symbol.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/fullcalendar.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/gmaps.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/holder.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/jquery-1.10.2.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/jquery-jvectormap-1.2.2.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/jquery-jvectormap-us-aea-en.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/jquery-jvectormap-world-mill-en.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/jquery-migrate-1.2.1.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/jquery-ui-1.10.3.min.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/jquery.autogrow-textarea.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/jquery.cookies.js">
+      <publishTime>04/04/2018 20:44:50</publishTime>
+    </File>
+    <File Include="bracket/js/jquery.datatables.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/jquery.gritter.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/jquery.maskedinput.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/jquery.mousewheel.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/jquery.prettyPhoto.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/jquery.sparkline.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/jquery.tagsinput.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/jquery.validate.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/masonry.pkgd.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/modernizr.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/morris.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/raphael-2.1.0.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/retina.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/toggles.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/js/wysihtml5-0.3.0.min.js">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/layouts.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/locked.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/maps.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/media-manager.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/notfound.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/people-directory.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/profile.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/read.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/scripts/clientes.js">
+      <publishTime>04/06/2018 16:45:55</publishTime>
+    </File>
+    <File Include="bracket/scripts/facturas.js">
+      <publishTime>04/08/2018 21:41:32</publishTime>
+    </File>
+    <File Include="bracket/scripts/index.js">
+      <publishTime>04/05/2018 15:53:49</publishTime>
+    </File>
+    <File Include="bracket/scripts/login.js">
+      <publishTime>04/05/2018 22:08:58</publishTime>
+    </File>
+    <File Include="bracket/scripts/usuarios_admin.js">
+      <publishTime>04/08/2018 16:52:43</publishTime>
+    </File>
+    <File Include="bracket/search-results.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/signin.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/signout.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/signup.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/sliders.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/tables.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/tabs-accordions.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/timeline.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/typography.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/video.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/widgets.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/wysiwyg.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="bracket/_div style=.html">
+      <publishTime>04/04/2018 20:44:51</publishTime>
+    </File>
+    <File Include="MasterPages/login.Master">
+      <publishTime>04/05/2018 08:07:47</publishTime>
+    </File>
+    <File Include="MasterPages/Master.Master">
+      <publishTime>04/08/2018 07:48:30</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/07/2018 15:24:54</publishTime>
+    </File>
+    <File Include="Pages/clientes.aspx">
+      <publishTime>04/06/2018 16:15:33</publishTime>
+    </File>
+    <File Include="Pages/facturas.aspx">
+      <publishTime>04/08/2018 21:40:52</publishTime>
+    </File>
+    <File Include="Pages/index.aspx">
+      <publishTime>04/09/2018 07:05:34</publishTime>
+    </File>
+    <File Include="Pages/login.aspx">
+      <publishTime>04/05/2018 10:31:37</publishTime>
+    </File>
+    <File Include="Pages/usuarios_admin.aspx">
+      <publishTime>04/06/2018 08:25:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/09/2018 15:25:41</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

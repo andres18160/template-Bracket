@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PruebaFacturaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tb_cliente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Cedula" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_factura" Relationship="Self.FK_tb_factura_tb_cliente" FromRole="tb_cliente" ToRole="tb_factura" />
+  </EntityType>
+  <EntityType Name="tb_detalle_factura">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdFactura" Type="Int32" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="ValorUnitario" Type="Double" />
+    <Property Name="ValorTotal" Type="Double" />
+    <NavigationProperty Name="tb_factura" Relationship="Self.FK_tb_detalle_factura_tb_factura" FromRole="tb_detalle_factura" ToRole="tb_factura" />
+  </EntityType>
+  <EntityType Name="tb_estado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_factura" Relationship="Self.FK_tb_factura_tb_estado" FromRole="tb_estado" ToRole="tb_factura" />
+  </EntityType>
+  <EntityType Name="tb_factura">
+    <Key>
+      <PropertyRef Name="NumeroFactura" />
+    </Key>
+    <Property Name="NumeroFactura" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Autoretenedor" Type="Boolean" />
+    <Property Name="IdEstado" Type="Int32" />
+    <Property Name="IdCliente" Type="Int32" />
+    <Property Name="ValorTotal" Type="Int32" />
+    <NavigationProperty Name="tb_cliente" Relationship="Self.FK_tb_factura_tb_cliente" FromRole="tb_factura" ToRole="tb_cliente" />
+    <NavigationProperty Name="tb_detalle_factura" Relationship="Self.FK_tb_detalle_factura_tb_factura" FromRole="tb_factura" ToRole="tb_detalle_factura" />
+    <NavigationProperty Name="tb_estado" Relationship="Self.FK_tb_factura_tb_estado" FromRole="tb_factura" ToRole="tb_estado" />
+  </EntityType>
+  <EntityType Name="tb_usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_tb_factura_tb_cliente">
+    <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="0..1" />
+    <End Role="tb_factura" Type="Self.tb_factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_cliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tb_factura">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_detalle_factura_tb_factura">
+    <End Role="tb_factura" Type="Self.tb_factura" Multiplicity="0..1" />
+    <End Role="tb_detalle_factura" Type="Self.tb_detalle_factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_factura">
+        <PropertyRef Name="NumeroFactura" />
+      </Principal>
+      <Dependent Role="tb_detalle_factura">
+        <PropertyRef Name="IdFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_factura_tb_estado">
+    <End Role="tb_estado" Type="Self.tb_estado" Multiplicity="0..1" />
+    <End Role="tb_factura" Type="Self.tb_factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_estado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_factura">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PruebaFacturaEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
+    <EntitySet Name="tb_detalle_factura" EntityType="Self.tb_detalle_factura" />
+    <EntitySet Name="tb_estado" EntityType="Self.tb_estado" />
+    <EntitySet Name="tb_factura" EntityType="Self.tb_factura" />
+    <EntitySet Name="tb_usuario" EntityType="Self.tb_usuario" />
+    <AssociationSet Name="FK_tb_factura_tb_cliente" Association="Self.FK_tb_factura_tb_cliente">
+      <End Role="tb_cliente" EntitySet="tb_cliente" />
+      <End Role="tb_factura" EntitySet="tb_factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_detalle_factura_tb_factura" Association="Self.FK_tb_detalle_factura_tb_factura">
+      <End Role="tb_factura" EntitySet="tb_factura" />
+      <End Role="tb_detalle_factura" EntitySet="tb_detalle_factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_factura_tb_estado" Association="Self.FK_tb_factura_tb_estado">
+      <End Role="tb_estado" EntitySet="tb_estado" />
+      <End Role="tb_factura" EntitySet="tb_factura" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

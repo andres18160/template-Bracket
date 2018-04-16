@@ -1,0 +1,236 @@
+﻿
+<div  ng-controller="ControladorClientes">
+
+
+    <div class="panel-body">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-btns">
+                    <a href="#" class="minimize">&minus;</a>
+                </div>
+                <a id="agregar"  class="btn btn-primary">Agregar Cliente</a>
+            </div>
+            <div class="panel-body">
+                <div class="dataTables_wrapper">
+                    <table class="table" id="tablaClientes">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Apellidos</th>
+                                <th>Cedula</th>
+                                <th>Dirección</th>
+                                <th>Telefono</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="cliente in clientes">
+                                <td>{{cliente.Id}}</td>
+                                <td>{{cliente.Nombre}}</td>
+                                <td>{{cliente.Apellidos}}</td>
+                                <td>{{cliente.Cedula}}</td>
+                                <td>{{cliente.Direccion}}</td>
+                                <td>{{cliente.Telefono}}</td>
+                                <td><a ng-click="CargarUpdateCliente(cliente.Id)"><i class="fa fa-pencil" ></i></a><a ng-click="CargarEliminarCliente(cliente.Id)"> <i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <!-- table-responsive -->
+            </div>
+            <!-- panel-body -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Eliminar Cliente</h4>
+                </div>
+                <div class="modal-body">
+                    <label> Esta seguro de Eliminar a <b> {{DeleteClient.Nombre+" "+DeleteClient.Apellidos}}</b></label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                    <button type="button" ng-click="EliminarCliente()" class="btn btn-danger">Si</button>
+                </div>
+            </div>
+            <!-- modal-content -->
+        </div>
+        <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
+
+
+
+    <div class="modal fade" id="ModalAgregar" tabindex="-1" role="dialog" aria-labelledby="myModalAgregar" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalAgregar">Agregar Cliente</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="formCrear" name="formCrear" ng-submit="crearCliente()" novalidate>
+                        <div class="panel panel-default">
+                            <div class="panel-body panel-body-nopadding">
+                                <label id="lblMensaje"></label>
+
+                                <div class="form-group" ng-class="{ 'has-error' : formCrear.Nombres.$invalid && !formCrear.Nombres.$pristine }">
+                                    <label class="col-sm-4 control-label">Nombre:</label>
+                                    <div class="col-sm-8">
+                                        <input id="txtNombre" type="text" name="Nombres" class="form-control" required ng-model="newCliente.Nombre" ng-minlength="4" ng-maxlength="20"/>
+                                        <p ng-show="formCrear.Nombres.$invalid && !formCrear.Nombres.$pristine" class="help-block">Este campo es requerido</p>
+                                        <p ng-show="userForm.Nombres.$error.minlength" class="help-block">Nombre demaciado corto</p>
+                                        <p ng-show="userForm.Nombres.$error.maxlength" class="help-block">Nombre demaciado largo (Max 20 caracteres)</p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group" ng-class="{ 'has-error' : formCrear.Apellido.$invalid && !formCrear.Apellido.$pristine }">
+                                    <label class="col-sm-4 control-label">Apellido:</label>
+                                    <div class="col-sm-8">
+                                        <input id="txtApellido" type="text" name="Apellido" class="form-control" required maxlength="50" ng-model="newCliente.Apellidos" />
+                                        <p ng-show="formCrear.Apellido.$invalid && !formCrear.Apellido.$pristine" class="help-block">Este campo es requerido</p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group" ng-class="{ 'has-error' : formCrear.Cedula.$invalid && !formCrear.Cedula.$pristine }">
+                                    <label class="col-sm-4 control-label">Cedula:</label>
+                                    <div class="col-sm-8">
+                                        <input id="txtCedula" type="number" name="Cedula" class="form-control" required maxlength="50" ng-model="newCliente.Cedula"  />
+                                        <p ng-show="formCrear.Cedula.$invalid && !formCrear.Cedula.$pristine" class="help-block">Tipo de dato invalido</p>
+                                    </div>
+
+                                </div>
+                                <div class="form-group" ng-class="{ 'has-error' : formCrear.Direccion.$invalid && !formCrear.Direccion.$pristine }">
+                                    <label class="col-sm-4 control-label">Dirección:</label>
+                                    <div class="col-sm-8">
+                                        <input id="txtDireccion" type="text" name="Direccion" class="form-control" required maxlength="100" ng-model="newCliente.Direccion" />
+                                        <p ng-show="formCrear.Cedula.$invalid && !formCrear.Cedula.$pristine" class="help-block">Este campo es requerido</p>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-class="{ 'has-error' : formCrear.Telefono.$invalid && !formCrear.Telefono.$pristine }">
+                                    <label class="col-sm-4 control-label">Teléfono:</label>
+                                    <div class="col-sm-8">
+                                        <input id="txtTelefono" type="tel" name="Telefono" class="form-control" required maxlength="50" ng-model="newCliente.Telefono" />
+                                        <p ng-show="formCrear.Telefono.$invalid && !formCrear.Telefono.$pristine" class="help-block">Este campo es requerido</p>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!-- panel-body -->
+                            <div class="panel-footer">
+                                <button  ng-disabled="formCrear.$invalid" class="btn btn-primary">Crear</button>
+                                <button type="reset" class="btn btn-default">Reset</button>
+                            </div>
+                            <!-- panel-footer -->
+                        </div>
+                        <!-- panel-default -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+
+                </div>
+            </div>
+            <!-- modal-content -->
+        </div>
+        <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
+
+
+    <div class="modal fade" id="ModalActualizar" tabindex="-1" role="dialog" aria-labelledby="myModalActualizar" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"> Actualizar {{updateCliente.Nombre +" "+ updateCliente.Apellidos}} </h4>
+                </div>
+                <div class="modal-body">
+                    <form id="formActualizar" name="formActualizar" ng-submit="ActualizarCliente()" novalidate >
+                        <div class="panel panel-default">
+                            <div class="panel-body panel-body-nopadding">
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Id:</label>
+                                    <div class="col-sm-2">
+                                        <input id="txtIdActualizar" type="text" name="Id" class="form-control" maxlength="50" disabled ng-model="updateCliente.Id"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Nombre:</label>
+                                    <div class="col-sm-8">
+                                        <input id="txtNombreActualizar" type="text" name="Nombres" class="form-control" required maxlength="50" ng-model="updateCliente.Nombre" />
+                                        <p ng-show="formActualizar.Nombre.$invalid && !formActualizar.Nombre.$pristine" class="help-block">Este campo es requerido</p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Apellido:</label>
+                                    <div class="col-sm-8">
+                                        <input id="txtApellidoActualizar" type="text" name="Apellido" class="form-control" required maxlength="50" ng-model="updateCliente.Apellidos" />
+                                        <p ng-show="formActualizar.Nombre.$invalid && !formActualizar.Nombre.$pristine" class="help-block">Este campo es requerido</p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Cedula:</label>
+                                    <div class="col-sm-8">
+                                        <input id="txtCedulaActualizar" type="text" name="Cedula" class="form-control" maxlength="50" disabled ng-model="updateCliente.Cedula"/>                                        
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Dirección:</label>
+                                    <div class="col-sm-8">
+                                        <input id="txtDireccionActualizar" type="text" name="Direccion" class="form-control" required maxlength="100" ng-model="updateCliente.Direccion"/>
+                                        <p ng-show="formActualizar.Direccion.$invalid && !formActualizar.Direccion.$pristine" class="help-block">Este campo es requerido</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Teléfono:</label>
+                                    <div class="col-sm-8">
+                                        <input id="txtTelefonoActualizar" type="tel" name="Telefono" class="form-control" required maxlength="50" ng-model="updateCliente.Telefono"/>
+                                        <p ng-show="formActualizar.Telefono.$invalid && !formActualizar.Telefono.$pristine" class="help-block">Este campo es requerido</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- panel-body -->
+                            <div class="panel-footer">
+                                <button id="ActualizarCliente" ng-disabled="formActualizar.$invalid" class="btn btn-primary">Actualizar</button>
+                                <button type="reset" class="btn btn-default">Reset</button>
+                            </div>
+                            <!-- panel-footer -->
+                        </div>
+                        <!-- panel-default -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+
+                </div>
+            </div>
+            <!-- modal-content -->
+        </div>
+        <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
+
+
+
+
+</div>
+
+@section scripts {
+        <script src="~/Content/bracket/scripts/clientes.js"></script>
+}
